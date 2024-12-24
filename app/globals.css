@@ -1,3 +1,24 @@
+/* app/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --background-color-light: #ffffff;
+  --background-color-dark: #1a202c;
+  --text-color-light: #181b21;
+  --text-color-dark: #f3f3f3;
+}
+
+body {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+[data-theme='dark'] {
+  --background-color-light: #1a202c;
+  --background-color-dark: #ffffff;
+  --text-color-light: #1d1a1a;
+  --text-color-dark: #1a202c;
+}

@@ -1,3 +1,5 @@
+// lib/schema.ts
+
 import { z } from 'zod'
 
 export const FormDataSchema = z.object({
